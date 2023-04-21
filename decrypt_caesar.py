@@ -27,8 +27,8 @@ def decrypt_caesar(ciphertext, key):
     return plaintext
 
 
-# Get the plaintext and key from the user
-ciphertext = input('Enter the plaintext: ')
+# Get the cypertext and key from the user
+ciphertext = input('Enter the cypertext: ')
 key = int(input('Enter the key: '))
 
 # Decrypt the ciphertext using the key
