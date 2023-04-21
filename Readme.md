@@ -25,17 +25,25 @@ def caesar_cipher(plaintext, shift):
             ciphertext += char
     return ciphertext`
 ````
+### Execution
 
+```
+# Get the plaintext and key from the user
+plaintext = input('Enter the plaintext: ')
+key = int(input('Enter the key: '))
+
+# Encrypt the plaintext using the key
+ciphertext = caesar_cipher(plaintext, key)
+print('Ciphertext:', ciphertext)
+````
 ### Example
 
 Here's an example of how to use the caesar_cipher function:
 
 ```
-plaintext = "Hello, World!"
-shift = 3
-ciphertext = caesar_cipher(plaintext, shift)
-print(ciphertext) # "Khoor, Zruog!"
-In this example, we're encrypting the message "Hello, World!" with a shift value of 3. The resulting ciphertext is "Khoor, Zruog!".
+Enter the plaintext: hello world
+Enter the key: 3
+Ciphertext: khoor zruog
 ```
 ### Limitations
 This implementation of the Caesar cipher only handles uppercase and lowercase letters, and leaves all other characters (such as spaces and punctuation) unchanged. It also assumes that the plaintext does not contain any accented or non-Latin characters. Additionally, the security of the Caesar cipher is relatively weak, and it can be easily broken by modern cryptanalysis techniques. Therefore, it should not be used for sensitive data or in situations where strong security is required.

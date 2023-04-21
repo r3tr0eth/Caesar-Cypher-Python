@@ -15,7 +15,10 @@ def caesar_cipher(plaintext, shift):
     return ciphertext
 
 
-plaintext = "Hello, World!"
-shift = 2
-ciphertext = caesar_cipher(plaintext, shift)
-print(ciphertext)
+# Get the plaintext and key from the user
+plaintext = input('Enter the plaintext: ')
+key = int(input('Enter the key: '))
+
+# Encrypt the plaintext using the key
+ciphertext = caesar_cipher(plaintext, key)
+print('Ciphertext:', ciphertext)
